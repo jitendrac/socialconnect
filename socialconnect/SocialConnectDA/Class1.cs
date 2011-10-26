@@ -7,5 +7,6 @@ namespace SocialConnectDA
 {
     public class Class1
     {
+
     }
 }

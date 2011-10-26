@@ -1,0 +1,5 @@
+E:\socialconnect\socialconnect\SocialConnectDA\bin\Debug\SocialConnectDA.dll
+E:\socialconnect\socialconnect\SocialConnectDA\bin\Debug\SocialConnectDA.pdb
+E:\socialconnect\socialconnect\SocialConnectDA\obj\Debug\ResolveAssemblyReference.cache
+E:\socialconnect\socialconnect\SocialConnectDA\obj\Debug\SocialConnectDA.dll
+E:\socialconnect\socialconnect\SocialConnectDA\obj\Debug\SocialConnectDA.pdb
