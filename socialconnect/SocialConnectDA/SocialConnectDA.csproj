@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>f29414f6-73eb-4d9d-83fc-26b2f6513226</ProjectGuid>
+    <ProjectGuid>{F0BEB8B9-0211-499A-9AE0-9B5EBBC7A895}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SocialConnectDA</RootNamespace>
