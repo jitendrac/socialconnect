@@ -1,9 +1,0 @@
-E:\socialconnect\socialconnect\socialconnectwebsite\bin\socialconnectwebsite.dll
-E:\socialconnect\socialconnect\socialconnectwebsite\bin\socialconnectwebsite.pdb
-E:\socialconnect\socialconnect\socialconnectwebsite\bin\socialconnectwebsite.xml
-E:\socialconnect\socialconnect\socialconnectwebsite\obj\Debug\ResolveAssemblyReference.cache
-E:\socialconnect\socialconnect\socialconnectwebsite\obj\Debug\socialconnectwebsite.Resources.resources
-E:\socialconnect\socialconnect\socialconnectwebsite\obj\Debug\socialconnectwebsite.vbproj.GenerateResource.Cache
-E:\socialconnect\socialconnect\socialconnectwebsite\obj\Debug\socialconnectwebsite.dll
-E:\socialconnect\socialconnect\socialconnectwebsite\obj\Debug\socialconnectwebsite.xml
-E:\socialconnect\socialconnect\socialconnectwebsite\obj\Debug\socialconnectwebsite.pdb
