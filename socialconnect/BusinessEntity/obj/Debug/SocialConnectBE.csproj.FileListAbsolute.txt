@@ -1,5 +1,0 @@
-E:\socialconnect\socialconnect\BusinessEntity\bin\Debug\BusinessEntity.dll
-E:\socialconnect\socialconnect\BusinessEntity\bin\Debug\BusinessEntity.pdb
-E:\socialconnect\socialconnect\BusinessEntity\obj\Debug\ResolveAssemblyReference.cache
-E:\socialconnect\socialconnect\BusinessEntity\obj\Debug\BusinessEntity.dll
-E:\socialconnect\socialconnect\BusinessEntity\obj\Debug\BusinessEntity.pdb

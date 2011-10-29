@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialConnectBE", "BusinessEntity\SocialConnectBE.csproj", "{3D44D85C-B833-4007-8602-F18E7A5496A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialConnectBE", "SocialConnectBE\SocialConnectBE.csproj", "{3D44D85C-B833-4007-8602-F18E7A5496A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialConnectBL", "SocialConnectBL\SocialConnectBL.csproj", "{55D6DEE5-FA1F-4435-A089-DAAC6490492B}"
 EndProject
