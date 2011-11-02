@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{3D44D85C-B833-4007-8602-F18E7A5496A3}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -45,7 +45,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlbumBE.cs" />
+    <Compile Include="ErrorLogBE.cs" />
+    <Compile Include="EventBE.cs" />
+    <Compile Include="EventParticipant.cs" />
+    <Compile Include="EventType.cs" />
+    <Compile Include="FileMasterBE.cs" />
+    <Compile Include="GroupXFilesBE.cs" />
+    <Compile Include="MessagemasterBE.cs" />
+    <Compile Include="NotificationBE.cs" />
+    <Compile Include="OwnerTypeBE.cs" />
+    <Compile Include="PermissionBE.cs" />
+    <Compile Include="PhotoBE.cs" />
+    <Compile Include="PostBE.cs" />
+    <Compile Include="PostTypeBE.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleBE.cs" />
+    <Compile Include="RoleXPermissionBE.cs" />
+    <Compile Include="SubmissionStatusBE.cs" />
+    <Compile Include="tblGroupBE.cs" />
+    <Compile Include="UserLogBE.cs" />
+    <Compile Include="UserMasterBE.cs" />
+    <Compile Include="UserXRoleBE.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
