@@ -3,3 +3,16 @@ E:\socialconnect\socialconnect\SocialConnectDA\bin\Debug\SocialConnectDA.pdb
 E:\socialconnect\socialconnect\SocialConnectDA\obj\Debug\ResolveAssemblyReference.cache
 E:\socialconnect\socialconnect\SocialConnectDA\obj\Debug\SocialConnectDA.dll
 E:\socialconnect\socialconnect\SocialConnectDA\obj\Debug\SocialConnectDA.pdb
+E:\tempproj\socialconnect1\socialconnect\SocialConnectDA\obj\Debug\ResolveAssemblyReference.cache
+E:\tempproj\socialconnect1\socialconnect\SocialConnectDA\obj\Debug\SocialConnectDA.dll
+E:\tempproj\socialconnect1\socialconnect\SocialConnectDA\obj\Debug\SocialConnectDA.pdb
+E:\tempproj\socialconnect1\socialconnect\SocialConnectDA\bin\Debug\SocialConnectDA.dll
+E:\tempproj\socialconnect1\socialconnect\SocialConnectDA\bin\Debug\SocialConnectDA.pdb
+E:\tempproj\socialconnect1\socialconnect\SocialConnectDA\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\tempproj\socialconnect1\socialconnect\SocialConnectDA\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\tempproj\socialconnect1\socialconnect\SocialConnectDA\bin\Debug\Microsoft.Practices.Unity.dll
+E:\tempproj\socialconnect1\socialconnect\SocialConnectDA\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\tempproj\socialconnect1\socialconnect\SocialConnectDA\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\tempproj\socialconnect1\socialconnect\SocialConnectDA\bin\Debug\Microsoft.Practices.Unity.pdb
+E:\tempproj\socialconnect1\socialconnect\SocialConnectDA\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+E:\tempproj\socialconnect1\socialconnect\SocialConnectDA\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
