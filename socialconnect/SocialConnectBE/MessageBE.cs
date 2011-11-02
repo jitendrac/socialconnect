@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BusinessEntity
 {
-    class MessagemasterBE
+    class MessageBE
     {
         #region Declaration of the private member's of the class
         int _MessageId;

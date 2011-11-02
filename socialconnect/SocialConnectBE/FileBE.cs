@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BusinessEntity
 {
-    class FileMasterBE
+    class FileBE
     {
 
         #region Declaration of the private member's of the class
