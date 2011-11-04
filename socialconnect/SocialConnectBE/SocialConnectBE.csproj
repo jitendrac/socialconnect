@@ -50,9 +50,10 @@
     <Compile Include="EventBE.cs" />
     <Compile Include="EventParticipant.cs" />
     <Compile Include="EventType.cs" />
-    <Compile Include="FileMasterBE.cs" />
+    <Compile Include="FileBE.cs" />
+    <Compile Include="GroupBE.cs" />
     <Compile Include="GroupXFilesBE.cs" />
-    <Compile Include="MessagemasterBE.cs" />
+    <Compile Include="MessageBE.cs" />
     <Compile Include="NotificationBE.cs" />
     <Compile Include="OwnerTypeBE.cs" />
     <Compile Include="PermissionBE.cs" />
@@ -63,9 +64,8 @@
     <Compile Include="RoleBE.cs" />
     <Compile Include="RoleXPermissionBE.cs" />
     <Compile Include="SubmissionStatusBE.cs" />
-    <Compile Include="tblGroupBE.cs" />
+    <Compile Include="UserBE.cs" />
     <Compile Include="UserLogBE.cs" />
-    <Compile Include="UserMasterBE.cs" />
     <Compile Include="UserXRoleBE.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
