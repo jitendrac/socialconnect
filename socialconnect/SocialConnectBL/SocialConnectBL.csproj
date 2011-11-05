@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{55D6DEE5-FA1F-4435-A089-DAAC6490492B}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -47,6 +47,13 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SocialConnectDA\SocialConnectDA.csproj">
+      <Project>{F0BEB8B9-0211-499A-9AE0-9B5EBBC7A895}</Project>
+      <Name>SocialConnectDA</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

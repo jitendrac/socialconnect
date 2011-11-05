@@ -50,6 +50,7 @@
     <Compile Include="GenralizeParametre.cs" />
     <Compile Include="GenralizeStoredProcedure.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserDA.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Microsoft.Practices.EnterpriseLibrary.Common.dll" />
