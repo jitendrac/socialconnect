@@ -57,6 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Service1.svc" />
+    <Content Include="App_Data\SocialConnectDB.mdf">
+    </Content>
+    <Content Include="App_Data\SocialConnectDB_log.LDF">
+      <DependentUpon>SocialConnectDB.mdf</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -71,9 +76,6 @@
       <Project>{55D6DEE5-FA1F-4435-A089-DAAC6490492B}</Project>
       <Name>SocialConnectBL</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
