@@ -56,6 +56,12 @@
     <Content Include="Microsoft.Practices.EnterpriseLibrary.Common.dll" />
     <Content Include="Microsoft.Practices.EnterpriseLibrary.Data.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SocialConnectBE\SocialConnectBE.csproj">
+      <Project>{3D44D85C-B833-4007-8602-F18E7A5496A3}</Project>
+      <Name>SocialConnectBE</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

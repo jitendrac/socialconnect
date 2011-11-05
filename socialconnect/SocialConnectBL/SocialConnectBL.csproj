@@ -50,6 +50,10 @@
     <Compile Include="UserBL.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SocialConnectBE\SocialConnectBE.csproj">
+      <Project>{3D44D85C-B833-4007-8602-F18E7A5496A3}</Project>
+      <Name>SocialConnectBE</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SocialConnectDA\SocialConnectDA.csproj">
       <Project>{F0BEB8B9-0211-499A-9AE0-9B5EBBC7A895}</Project>
       <Name>SocialConnectDA</Name>

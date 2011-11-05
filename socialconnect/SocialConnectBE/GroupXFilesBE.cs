@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace BusinessEntity
+namespace SocialConnectBE
 {
-    class GroupXFilesBE{
+    public class GroupXFilesBE
+    {
     
         #region Declaration of the private member's of the class
         int _GroupXField;

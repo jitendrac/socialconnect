@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace BusinessEntity
+namespace SocialConnectBE
 {
-    class UserXRoleBE
+    public class UserXRoleBE
     {
         #region Declaration of the private member's of the class
         int _UserXRoleId;

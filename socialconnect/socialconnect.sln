@@ -24,7 +24,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "socialconnectwebsite", "soc
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "51192"
+		VWDPort = "49582"
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialConnectWCF", "SocialConnectWCF\SocialConnectWCF.csproj", "{7D9D6672-E037-4603-AB21-85B9BECEA00F}"

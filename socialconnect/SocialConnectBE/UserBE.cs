@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace BusinessEntity
+namespace SocialConnectBE
 {
-    class UserBE
+    public class UserBE
     {
         #region Declaration of the private member's of the class
         int _UserId;
@@ -23,7 +23,7 @@ namespace BusinessEntity
             set { _UserId = value; }
         }
 
-        public string Email_id
+        public string EmailId
         {
             get { return _EmailId; }
             set { _EmailId = value; }
