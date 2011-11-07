@@ -24,3 +24,5 @@ E:\socialconnect\socialconnect\SocialConnectDA\bin\Debug\Microsoft.Practices.Ser
 E:\socialconnect\socialconnect\SocialConnectDA\bin\Debug\Microsoft.Practices.Unity.pdb
 E:\socialconnect\socialconnect\SocialConnectDA\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
 E:\socialconnect\socialconnect\SocialConnectDA\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\socialconnect\socialconnect\SocialConnectDA\bin\Debug\BusinessEntity.dll
+E:\socialconnect\socialconnect\SocialConnectDA\bin\Debug\BusinessEntity.pdb

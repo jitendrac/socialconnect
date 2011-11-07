@@ -47,8 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlbumDA.cs" />
+    <Compile Include="ErrorLogDA.cs" />
+    <Compile Include="EventDA.cs" />
+    <Compile Include="EventParticipantDA.cs" />
+    <Compile Include="EventTypeDA.cs" />
+    <Compile Include="FileDA.cs" />
     <Compile Include="GenralizeParametre.cs" />
     <Compile Include="GenralizeStoredProcedure.cs" />
+    <Compile Include="GroupDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserDA.cs" />
   </ItemGroup>

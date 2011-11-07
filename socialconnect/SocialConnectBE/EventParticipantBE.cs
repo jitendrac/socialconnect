@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SocialConnectBE
 {
-    public class EventParticipant
+    public class EventParticipantBE
     {
 
         #region Declaration of the private member's of the class
@@ -14,7 +14,7 @@ namespace SocialConnectBE
         int _SubmissionStatusId;
         string _EventParticipantDescription;
         int _ParticipantParentId;
-        int _EventParticipantDateTime;
+        DateTime _EventParticipationDateTime;
         #endregion
 
         #region Declaration of the encaptulating  properties of  private member's of the class
@@ -49,10 +49,10 @@ namespace SocialConnectBE
         }
         
 
-        public int EventParticipantDateTime
+        public DateTime EventParticipationDateTime
         {
-            get { return _EventParticipantDateTime; }
-            set { _EventParticipantDateTime = value; }
+            get { return _EventParticipationDateTime; }
+            set { _EventParticipationDateTime = value; }
         }
          #endregion
 

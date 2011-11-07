@@ -8,7 +8,7 @@ namespace SocialConnectBE
     public class AlbumBE
     {
         #region Declaration of the private member's of the class
-        int _Album;
+        int _AlbumId;
         int _CoverImageId;
         int _OwnerId;
         String _Name;
@@ -18,10 +18,10 @@ namespace SocialConnectBE
         #endregion
 
         #region Declaration of the encaptulating  properties of  private member's of the class
-        public int Album
+        public int AlbumId
         {
-            get { return _Album; }
-            set { _Album = value; }
+            get { return _AlbumId; }
+            set { _AlbumId = value; }
         }
 
         public int CoverImageId

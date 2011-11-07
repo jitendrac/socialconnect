@@ -48,8 +48,8 @@
     <Compile Include="AlbumBE.cs" />
     <Compile Include="ErrorLogBE.cs" />
     <Compile Include="EventBE.cs" />
-    <Compile Include="EventParticipant.cs" />
-    <Compile Include="EventType.cs" />
+    <Compile Include="EventParticipantBE.cs" />
+    <Compile Include="EventTypeBE.cs" />
     <Compile Include="FileBE.cs" />
     <Compile Include="GroupBE.cs" />
     <Compile Include="GroupXFilesBE.cs" />

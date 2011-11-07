@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SocialConnectBE
 {
-    public class tblGroupBE
+    public class GroupBE
     {
         #region Declaration of the private member's of the class
         int _GroupId;

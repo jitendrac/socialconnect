@@ -5,11 +5,11 @@ using System.Text;
 
 namespace SocialConnectBE
 {
-    public class EventType
+    public class EventTypeBE
     {
         #region Declaration of the private member's of the class
         int _EventTypeId;
-        string EventTypeName;
+        string _EventTypeName;
         #endregion
 
         #region Declaration of the encaptulating  properties of  private member's of the class
@@ -20,10 +20,10 @@ namespace SocialConnectBE
         }
         
 
-        public string EventTypeName1
+        public string EventTypeName
         {
-            get { return EventTypeName; }
-            set { EventTypeName = value; }
+            get { return _EventTypeName; }
+            set { _EventTypeName = value; }
         }
          #endregion
     }
