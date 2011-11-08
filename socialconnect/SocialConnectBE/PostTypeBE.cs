@@ -9,7 +9,7 @@ namespace SocialConnectBE
     {
         #region Declaration of the private member's of the class
         int _PostTypeId;
-        int _PostTypeName;
+        string _PostTypeName;
         #endregion
 
         #region Declaration of the encaptulating  properties of  private member's of the class
@@ -19,7 +19,7 @@ namespace SocialConnectBE
             set { _PostTypeId = value; }
         }
         
-        public int PostTypeName
+        public string PostTypeName
         {
             get { return _PostTypeName; }
             set { _PostTypeName = value; }

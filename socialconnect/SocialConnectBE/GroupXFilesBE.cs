@@ -9,17 +9,17 @@ namespace SocialConnectBE
     {
     
         #region Declaration of the private member's of the class
-        int _GroupXField;
+        int _GroupXFileId;
         int _GroupId;
         int _FileId;
         string _Category;
         #endregion
 
         #region Declaration of the encaptulating  properties of  private member's of the class
-        public int GroupXField
+        public int GroupXFileId
         {
-          get { return _GroupXField; }
-          set { _GroupXField = value; }
+          get { return _GroupXFileId; }
+          set { _GroupXFileId = value; }
         }
                 
         public int GroupId

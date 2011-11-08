@@ -56,13 +56,21 @@
     <Compile Include="GenralizeParametre.cs" />
     <Compile Include="GenralizeStoredProcedure.cs" />
     <Compile Include="GroupDA.cs" />
+    <Compile Include="GroupXFilesDA.cs" />
     <Compile Include="MessageDA.cs" />
+    <Compile Include="NotificationDA.cs" />
     <Compile Include="OwnerTypeDA.cs" />
     <Compile Include="PermissionDA.cs" />
     <Compile Include="PhotoDA.cs" />
     <Compile Include="PostDA.cs" />
+    <Compile Include="PostTypeDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleDA.cs" />
+    <Compile Include="RoleXPermissionDA.cs" />
+    <Compile Include="SubmissionStatusDA.cs" />
     <Compile Include="UserDA.cs" />
+    <Compile Include="UserLogDA.cs" />
+    <Compile Include="UserXRoleDA.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Microsoft.Practices.EnterpriseLibrary.Common.dll" />

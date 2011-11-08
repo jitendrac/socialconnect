@@ -9,7 +9,7 @@ namespace SocialConnectBE
     {
         #region Declaration of the private member's of the class
         int _SubmissionStatusId;
-        int _Status;
+       string _Status;
         #endregion
 
         #region Declaration of the encaptulating  properties of  private member's of the class
@@ -20,7 +20,7 @@ namespace SocialConnectBE
         }
         
 
-        public int Status
+        public string Status
         {
             get { return _Status; }
             set { _Status = value; }
