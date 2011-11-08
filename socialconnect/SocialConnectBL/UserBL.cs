@@ -11,7 +11,7 @@ namespace SocialConnectBL
     {
         public static DataSet getAllElements()
         {
-            return UserDA.getAllElements();
+            return UserDA.GetAll();
         }
     }
 }
