@@ -11,7 +11,7 @@ namespace SocialConnectBE
         int _NotificationId;
         int _UserId;
         DateTime _DateTime;
-        String _NotificationDescription;
+        String _Description;
         #endregion
 
         #region Declaration of the encaptulating  properties of  private member's of the class
@@ -33,10 +33,10 @@ namespace SocialConnectBE
             set { _DateTime = value; }
         }
         
-        public String NotificationDescription
+        public String Description
         {
-            get { return _NotificationDescription; }
-            set { _NotificationDescription = value; }
+            get { return _Description; }
+            set { _Description = value; }
         }
         #endregion
 

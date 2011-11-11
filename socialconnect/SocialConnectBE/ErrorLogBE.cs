@@ -9,9 +9,9 @@ namespace SocialConnectBE
     {
         #region Declaration of the private member's of the class
         int _ErrorLogId;
-        string _ErrorCustomMessage;
-        string _ErrorStackTrace;
-        string _ErrorMessage;
+        string _CustomMessage;
+        string _StackTrace ;
+        string _Message;
         #endregion
 
         #region Declaration of the encaptulating  properties of  private member's of the class
@@ -21,23 +21,23 @@ namespace SocialConnectBE
             set { _ErrorLogId = value; }
         }
         
-        public string ErrorCustomMessage
+        public string CustomMessage
         {
-            get { return _ErrorCustomMessage; }
-            set { _ErrorCustomMessage = value; }
+            get { return _CustomMessage; }
+            set { _CustomMessage = value; }
         }
         
-        public string ErrorStackTrace
+        public string StackTrace
         {
-            get { return _ErrorStackTrace; }
-            set { _ErrorStackTrace = value; }
+            get { return _StackTrace; }
+            set { _StackTrace = value; }
         }
         
 
-        public string ErrorMessage
+        public string Message
         {
-            get { return _ErrorMessage; }
-            set { _ErrorMessage = value; }
+            get { return _Message; }
+            set { _Message = value; }
         }
         #endregion
 

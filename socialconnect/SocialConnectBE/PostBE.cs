@@ -12,7 +12,7 @@ namespace SocialConnectBE
         int _CreatorId; 
         int _PostTypeId;
         string _Title;
-        string _Contents;
+        string _Content;
         DateTime _AddedDateTime;
         #endregion
 
@@ -42,10 +42,10 @@ namespace SocialConnectBE
             set { _Title = value; }
         }
         
-        public string Contents
+        public string Content
         {
-            get { return _Contents; }
-            set { _Contents = value; }
+            get { return _Content; }
+            set { _Content = value; }
         }
 
 

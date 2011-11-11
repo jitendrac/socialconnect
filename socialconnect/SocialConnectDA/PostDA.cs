@@ -46,7 +46,7 @@ namespace SocialConnectDA
             ObjListUserParam.Add(new GenralizeParametre("CreatorId", objPostBE.CreatorId, DbType.Int32));
             ObjListUserParam.Add(new GenralizeParametre("PostTypeId", objPostBE.PostTypeId, DbType.Int32));
             ObjListUserParam.Add(new GenralizeParametre("Title", objPostBE.Title, DbType.String));
-            ObjListUserParam.Add(new GenralizeParametre("Contents", objPostBE.Contents, DbType.String));
+            ObjListUserParam.Add(new GenralizeParametre("Content", objPostBE.Content, DbType.String));
             ObjListUserParam.Add(new GenralizeParametre("AddedEndDateTime", objPostBE.AddedDateTime, DbType.DateTime));
             objPostBE.PostId = GenralizeStoredProcedure.GetInt(spPostSave, ObjListUserParam);
             return objPostBE.PostId;
@@ -117,9 +117,9 @@ namespace SocialConnectDA
             {
                 objPostBE.Title = dr.GetString(dr.GetOrdinal("Title"));
             }
-            if (!dr.IsDBNull(dr.GetOrdinal("Contents")))
+            if (!dr.IsDBNull(dr.GetOrdinal("Content")))
             {
-                objPostBE.Contents = dr.GetString(dr.GetOrdinal("Contents"));
+                objPostBE.Content = dr.GetString(dr.GetOrdinal("Content"));
             }
             if (!dr.IsDBNull(dr.GetOrdinal("AddedEndDateTime")))
             {

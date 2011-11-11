@@ -40,9 +40,9 @@ namespace SocialConnectDA
         {
             List<GenralizeParametre> ObjListUserParam = new List<GenralizeParametre>();
             ObjListUserParam.Add(new GenralizeParametre("ErrorLogId", objErrorLogBE.ErrorLogId, DbType.Int32));
-            ObjListUserParam.Add(new GenralizeParametre("ErrorCustomMessage", objErrorLogBE.ErrorCustomMessage, DbType.String));
-            ObjListUserParam.Add(new GenralizeParametre("ErrorStackTrace", objErrorLogBE.ErrorStackTrace, DbType.String));
-            ObjListUserParam.Add(new GenralizeParametre("ErrorMessage", objErrorLogBE.ErrorMessage, DbType.String));
+            ObjListUserParam.Add(new GenralizeParametre("CustomMessage", objErrorLogBE.CustomMessage, DbType.String));
+            ObjListUserParam.Add(new GenralizeParametre("StackTrace", objErrorLogBE.StackTrace, DbType.String));
+            ObjListUserParam.Add(new GenralizeParametre("Message", objErrorLogBE.Message, DbType.String));
             objErrorLogBE.ErrorLogId = GenralizeStoredProcedure.GetInt(spErrorLogSave, ObjListUserParam);
             return objErrorLogBE.ErrorLogId;
         }
@@ -100,17 +100,17 @@ namespace SocialConnectDA
             {
                 objErrorLogBE.ErrorLogId = dr.GetInt32(dr.GetOrdinal("ErrorLogId"));
             }
-            if (!dr.IsDBNull(dr.GetOrdinal("ErrorCustomMessage")))
+            if (!dr.IsDBNull(dr.GetOrdinal("CustomMessage")))
             {
-                objErrorLogBE.ErrorCustomMessage = dr.GetString(dr.GetOrdinal("ErrorCustomMessage"));
+                objErrorLogBE.CustomMessage = dr.GetString(dr.GetOrdinal("CustomMessage"));
             }
-            if (!dr.IsDBNull(dr.GetOrdinal("ErrorStackTrace")))
+            if (!dr.IsDBNull(dr.GetOrdinal("StackTrace")))
             {
-                objErrorLogBE.ErrorStackTrace = dr.GetString(dr.GetOrdinal("ErrorStackTrace"));
+                objErrorLogBE.StackTrace = dr.GetString(dr.GetOrdinal("StackTrace"));
             }
-            if (!dr.IsDBNull(dr.GetOrdinal("ErrorMessage")))
+            if (!dr.IsDBNull(dr.GetOrdinal("Message")))
             {
-                objErrorLogBE.ErrorMessage = dr.GetString(dr.GetOrdinal("ErrorMessage"));
+                objErrorLogBE.Message = dr.GetString(dr.GetOrdinal("Message"));
             }
             return objErrorLogBE;
         }

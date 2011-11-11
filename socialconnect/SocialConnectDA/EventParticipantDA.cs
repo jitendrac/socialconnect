@@ -26,9 +26,9 @@ namespace SocialConnectDA
             objListEventParticipantParam.Add(new GenralizeParametre("EventParticipantId", ObjEventParticipant.EventParticipantId, DbType.Int32));
             objListEventParticipantParam.Add(new GenralizeParametre("EventId", ObjEventParticipant.EventId, DbType.Int32));
             objListEventParticipantParam.Add(new GenralizeParametre("SubbmissionStatusId", ObjEventParticipant.SubmissionStatusId, DbType.Int32));
-            objListEventParticipantParam.Add(new GenralizeParametre("EventParticipantDescription", ObjEventParticipant.EventParticipantDescription, DbType.String));
+            objListEventParticipantParam.Add(new GenralizeParametre("Description", ObjEventParticipant.Description, DbType.String));
             objListEventParticipantParam.Add(new GenralizeParametre("ParticipantParentId", ObjEventParticipant.ParticipantParentId, DbType.Int32));
-            objListEventParticipantParam.Add(new GenralizeParametre("EventParticipationDateTime", ObjEventParticipant.EventParticipationDateTime, DbType.DateTime));
+            objListEventParticipantParam.Add(new GenralizeParametre("AddedDateTime", ObjEventParticipant.AddedDateTime, DbType.DateTime));
             ObjEventParticipant.EventParticipantId = GenralizeStoredProcedure.GetInt(spEventParticipantSave, objListEventParticipantParam);
             return ObjEventParticipant.EventParticipantId;
         }
@@ -81,17 +81,17 @@ namespace SocialConnectDA
             {
                 objEventParticipantBE.SubmissionStatusId = dr.GetInt32(dr.GetOrdinal("SubmissionStatusId"));
             }
-            if (!dr.IsDBNull(dr.GetOrdinal("EventParticipantDescription")))
+            if (!dr.IsDBNull(dr.GetOrdinal("Description")))
             {
-                objEventParticipantBE.EventParticipantDescription = dr.GetString(dr.GetOrdinal("EventParticipantDescription"));
+                objEventParticipantBE.Description = dr.GetString(dr.GetOrdinal("Description"));
             }
             if (!dr.IsDBNull(dr.GetOrdinal("ParticipantParentId")))
             {
                 objEventParticipantBE.ParticipantParentId = dr.GetInt32(dr.GetOrdinal("ParticipantParentId"));
             }
-            if (!dr.IsDBNull(dr.GetOrdinal("EventParticipationDateTime")))
+            if (!dr.IsDBNull(dr.GetOrdinal("AddedDateTime")))
             {
-                objEventParticipantBE.EventParticipationDateTime = dr.GetDateTime(dr.GetOrdinal("EventParticipationDateTime"));
+                objEventParticipantBE.AddedDateTime = dr.GetDateTime(dr.GetOrdinal("AddedDateTime"));
             }
             return objEventParticipantBE;
         }

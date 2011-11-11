@@ -24,7 +24,7 @@ namespace SocialConnectDA
             objListNotificationParam.Add(new GenralizeParametre("NotificationId",objNotificationBE.NotificationId,DbType.Int32));
             objListNotificationParam.Add(new GenralizeParametre("UserId",objNotificationBE.UserId,DbType.Int32));
             objListNotificationParam.Add(new GenralizeParametre("DateTime",objNotificationBE.DateTime,DbType.DateTime));
-            objListNotificationParam.Add(new GenralizeParametre("NotificationDescription",objNotificationBE.NotificationDescription,DbType.String));
+            objListNotificationParam.Add(new GenralizeParametre("Description",objNotificationBE.Description,DbType.String));
 
             objNotificationBE.NotificationId = GenralizeStoredProcedure.GetInt(spNotificationSave,objListNotificationParam);
             return objNotificationBE.NotificationId;
@@ -81,9 +81,9 @@ namespace SocialConnectDA
                 objNotificationBE.DateTime = dr.GetDateTime(dr.GetOrdinal("DateTime"));
             }
 
-            if (!dr.IsDBNull(dr.GetOrdinal("NotificationDescription")))
+            if (!dr.IsDBNull(dr.GetOrdinal("Description")))
             {
-                objNotificationBE.NotificationDescription = dr.GetString(dr.GetOrdinal("NotificationDescription"));
+                objNotificationBE.Description = dr.GetString(dr.GetOrdinal("Description"));
             }
 
             return objNotificationBE;

@@ -44,6 +44,9 @@ namespace SocialConnectDA
             ObjListUserParam.Add(new GenralizeParametre("Address", objUserBE.Address, DbType.String));
             ObjListUserParam.Add(new GenralizeParametre("ContactNo", objUserBE.ContactNo, DbType.String));
             ObjListUserParam.Add(new GenralizeParametre("EmailId", objUserBE.EmailId, DbType.String));
+            ObjListUserParam.Add(new GenralizeParametre("UserStatus", objUserBE.EmailId, DbType.String));
+            ObjListUserParam.Add(new GenralizeParametre("UserIdentityImageName", objUserBE.UserIdentityImageName, DbType.String));
+            ObjListUserParam.Add(new GenralizeParametre("UserIdentityImagePath", objUserBE.UserIdentityImagePath, DbType.String));
             objUserBE.UserId = GenralizeStoredProcedure.GetInt(spUserSave, ObjListUserParam);
             return objUserBE.UserId;
         }
@@ -105,6 +108,14 @@ namespace SocialConnectDA
             if (!dr.IsDBNull(dr.GetOrdinal("EmailId")))
             {
                 objUserBE.EmailId = dr.GetString(dr.GetOrdinal("EmailId"));
+            }
+            if (!dr.IsDBNull(dr.GetOrdinal("UserIdentityImageName")))
+            {
+                objUserBE.UserIdentityImageName = dr.GetString(dr.GetOrdinal("UserIdentityImageName"));
+            }
+            if (!dr.IsDBNull(dr.GetOrdinal("UserIdentityImagePath")))
+            {
+                objUserBE.UserIdentityImagePath = dr.GetString(dr.GetOrdinal("UserIdentityImagePath"));
             }
 
             return objUserBE;

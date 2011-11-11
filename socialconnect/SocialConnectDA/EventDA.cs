@@ -45,13 +45,13 @@ namespace SocialConnectDA
        {
            List<GenralizeParametre> ObjListUserParam = new List<GenralizeParametre>();
            ObjListUserParam.Add(new GenralizeParametre("EventId", objEventBE.EventId, DbType.Int32));
-           ObjListUserParam.Add(new GenralizeParametre("EventTitle", objEventBE.EventTitle, DbType.String));
-           ObjListUserParam.Add(new GenralizeParametre("EventDescription", objEventBE.EventDescription, DbType.String));
+           ObjListUserParam.Add(new GenralizeParametre("Title", objEventBE.Title, DbType.String));
+           ObjListUserParam.Add(new GenralizeParametre("Description", objEventBE.Description, DbType.String));
            ObjListUserParam.Add(new GenralizeParametre("OwnerId", objEventBE.OwnerId, DbType.Int32));
            ObjListUserParam.Add(new GenralizeParametre("OwnerTypeId", objEventBE.OwnerTypeId, DbType.Int32));
            ObjListUserParam.Add(new GenralizeParametre("EventTypeId", objEventBE.EventTypeId, DbType.Int32));
-           ObjListUserParam.Add(new GenralizeParametre("EventStartDateTime", objEventBE.EventStartDateTime, DbType.DateTime));
-           ObjListUserParam.Add(new GenralizeParametre("EventEndDateTime", objEventBE.EventEndDateTime, DbType.DateTime));
+           ObjListUserParam.Add(new GenralizeParametre("StartDateTime", objEventBE.StartDateTime, DbType.DateTime));
+           ObjListUserParam.Add(new GenralizeParametre("EndDateTime", objEventBE.EndDateTime, DbType.DateTime));
            objEventBE.EventId = GenralizeStoredProcedure.GetInt(spEventSave, ObjListUserParam);
            return objEventBE.EventId;
        }
@@ -109,13 +109,13 @@ namespace SocialConnectDA
            {
                objEventBE.EventId = dr.GetInt32(dr.GetOrdinal("EventId"));
            }
-           if (!dr.IsDBNull(dr.GetOrdinal("EventTitle")))
+           if (!dr.IsDBNull(dr.GetOrdinal("Title")))
            {
-               objEventBE.EventTitle = dr.GetString(dr.GetOrdinal("EventTitle"));
+               objEventBE.Title = dr.GetString(dr.GetOrdinal("Title"));
            }
-           if (!dr.IsDBNull(dr.GetOrdinal("EventDescription")))
+           if (!dr.IsDBNull(dr.GetOrdinal("Description")))
            {
-               objEventBE.EventDescription = dr.GetString(dr.GetOrdinal("EventDescription"));
+               objEventBE.Description = dr.GetString(dr.GetOrdinal("Description"));
            }
            if (!dr.IsDBNull(dr.GetOrdinal("OwnerId")))
            {
@@ -129,13 +129,13 @@ namespace SocialConnectDA
            {
                objEventBE.EventTypeId = dr.GetInt32(dr.GetOrdinal("EventTypeId"));
            }
-           if (!dr.IsDBNull(dr.GetOrdinal("EventStartDateTime")))
+           if (!dr.IsDBNull(dr.GetOrdinal("StartDateTime")))
            {
-               objEventBE.EventStartDateTime = dr.GetDateTime(dr.GetOrdinal("EventStartDateTime"));
+               objEventBE.StartDateTime = dr.GetDateTime(dr.GetOrdinal("StartDateTime"));
            }
-           if (!dr.IsDBNull(dr.GetOrdinal("EventEndDateTime")))
+           if (!dr.IsDBNull(dr.GetOrdinal("EndDateTime")))
            {
-               objEventBE.EventEndDateTime = dr.GetDateTime(dr.GetOrdinal("EventEndDateTime"));
+               objEventBE.EndDateTime = dr.GetDateTime(dr.GetOrdinal("EndDateTime"));
            }
 
            return objEventBE;

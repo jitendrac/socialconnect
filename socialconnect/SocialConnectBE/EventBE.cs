@@ -9,13 +9,13 @@ namespace SocialConnectBE
     {
         #region Declaration of the private member's of the class
         int _EventId;
-        string _EventTitle;
-        string _EventDescription;
+        string _Title;
+        string _Description;
         int _ownerId;
         int _ownerTypeId;
         int _EventTypeId;
-        DateTime _EventStartDateTime;
-        DateTime _EventEndDateTime;
+        DateTime _StartDateTime;
+        DateTime _EndDateTime;
         #endregion
 
         #region Declaration of the encaptulating  properties of  private member's of the class
@@ -25,16 +25,16 @@ namespace SocialConnectBE
             set { _EventId = value; }
         }
         
-        public string EventTitle
+        public string Title
         {
-            get { return _EventTitle; }
-            set { _EventTitle = value; }
+            get { return _Title; }
+            set { _Title = value; }
         }
         
-        public string EventDescription
+        public string Description
         {
-            get { return _EventDescription; }
-            set { _EventDescription = value; }
+            get { return _Description; }
+            set { _Description = value; }
         }
         
         public int OwnerId
@@ -55,17 +55,17 @@ namespace SocialConnectBE
             set { _EventTypeId = value; }
         }
         
-        public DateTime EventStartDateTime
+        public DateTime StartDateTime
         {
-            get { return _EventStartDateTime; }
-            set { _EventStartDateTime = value; }
+            get { return _StartDateTime; }
+            set { _StartDateTime = value; }
         }
         
 
-        public DateTime EventEndDateTime
+        public DateTime EndDateTime
         {
-            get { return _EventEndDateTime; }
-            set { _EventEndDateTime = value; }
+            get { return _EndDateTime; }
+            set { _EndDateTime = value; }
         }
          #endregion
 

@@ -12,9 +12,9 @@ namespace SocialConnectBE
         int _EventParticipantId;
         int _EventId;
         int _SubmissionStatusId;
-        string _EventParticipantDescription;
+        string _Description;
         int _ParticipantParentId;
-        DateTime _EventParticipationDateTime;
+        DateTime _AddedDateTime;
         #endregion
 
         #region Declaration of the encaptulating  properties of  private member's of the class
@@ -36,10 +36,10 @@ namespace SocialConnectBE
             set { _SubmissionStatusId = value; }
         }
         
-        public string EventParticipantDescription
+        public string Description
         {
-            get { return _EventParticipantDescription; }
-            set { _EventParticipantDescription = value; }
+            get { return _Description; }
+            set { _Description = value; }
         }
         
         public int ParticipantParentId
@@ -49,10 +49,10 @@ namespace SocialConnectBE
         }
         
 
-        public DateTime EventParticipationDateTime
+        public DateTime AddedDateTime
         {
-            get { return _EventParticipationDateTime; }
-            set { _EventParticipationDateTime = value; }
+            get { return _AddedDateTime; }
+            set { _AddedDateTime = value; }
         }
          #endregion
 
