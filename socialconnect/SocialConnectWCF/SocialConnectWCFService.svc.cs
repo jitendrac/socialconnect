@@ -12,7 +12,7 @@ using SocialConnectBL;
 namespace SocialConnectWCF
 {
     // NOTE: If you change the class name "Service1" here, you must also update the reference to "Service1" in Web.config and in the associated .svc file.
-    public class Service1 : IService1
+    public class Service1 : ISocialConnectWCF
     {
         public string GetData(int value)
         {
