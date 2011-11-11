@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="25d77054-ae64-4983-902b-1de95dbd23fb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:58107/SocialConnectWCFService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SocialConnectWCFService.xsd" MetadataType="Schema" ID="87792e9a-475d-474b-b4f6-21a6c525bd9d" SourceId="1" SourceUrl="http://localhost:58107/SocialConnectWCFService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SocialConnectWCFService1.xsd" MetadataType="Schema" ID="d56c9f31-99c6-4d78-82fe-4d0073a2302c" SourceId="1" SourceUrl="http://localhost:58107/SocialConnectWCFService.svc?xsd=xsd2" />
+    <MetadataFile FileName="SocialConnectWCFService.disco" MetadataType="Disco" ID="4481686f-96aa-4391-8e0f-59061716a99a" SourceId="1" SourceUrl="http://localhost:58107/SocialConnectWCFService.svc?disco" />
+    <MetadataFile FileName="SocialConnectWCFService2.xsd" MetadataType="Schema" ID="9eebd05e-dfba-461a-91b1-fac5e311bc74" SourceId="1" SourceUrl="http://localhost:58107/SocialConnectWCFService.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="0085e8b2-b129-48d4-9f38-6e1d8da94431" SourceId="1" SourceUrl="http://localhost:58107/SocialConnectWCFService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

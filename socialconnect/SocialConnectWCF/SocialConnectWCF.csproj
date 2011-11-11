@@ -56,7 +56,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service1.svc" />
+    <Content Include="SocialConnectWCFService.svc" />
     <Content Include="App_Data\SocialConnectDB.mdf">
     </Content>
     <Content Include="App_Data\SocialConnectDB_log.LDF">
@@ -65,10 +65,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Service1.svc.cs">
-      <DependentUpon>Service1.svc</DependentUpon>
+    <Compile Include="SocialConnectWCFService.svc.cs">
+      <DependentUpon>SocialConnectWCFService.svc</DependentUpon>
     </Compile>
-    <Compile Include="IService1.cs" />
+    <Compile Include="ISocialConnectWCF.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
