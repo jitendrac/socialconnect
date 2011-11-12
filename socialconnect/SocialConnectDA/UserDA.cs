@@ -49,6 +49,8 @@ namespace SocialConnectDA
             ObjListUserParam.Add(new GenralizeParametre("UserIdentityImagePath", objUserBE.UserIdentityImagePath, DbType.String));
             objUserBE.UserId = GenralizeStoredProcedure.GetInt(spUserSave, ObjListUserParam);
             return objUserBE.UserId;
+            
+
         }
 
         public static bool Delete(int intUserId)

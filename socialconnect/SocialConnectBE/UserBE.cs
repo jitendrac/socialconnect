@@ -18,7 +18,7 @@ namespace SocialConnectBE
         string _UserIdentityImageName;
         string _UserIdentityImagePath;
 
-      
+
 
         #endregion
 
@@ -70,5 +70,13 @@ namespace SocialConnectBE
             set { _UserIdentityImagePath = value; }
         }
         #endregion
+
+        public static enum UserStatusList
+        {
+            Pending,
+            Approved,
+            Rejected
+
+        }
     }
 }
