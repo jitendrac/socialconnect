@@ -220,11 +220,50 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
+  <wsp:Policy wsu:Id="WSHttpBinding_ISocialConnectWCF_GetWallStoryByUserId_Input_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body />
+          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
+        </sp:SignedParts>
+        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body />
+        </sp:EncryptedParts>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="WSHttpBinding_ISocialConnectWCF_GetWallStoryByUserId_output_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body />
+          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
+        </sp:SignedParts>
+        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body />
+        </sp:EncryptedParts>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
   <wsdl:types>
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
       <xsd:import schemaLocation="http://localhost:58107/SocialConnectWCFService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://localhost:58107/SocialConnectWCFService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import schemaLocation="http://localhost:58107/SocialConnectWCFService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SocialConnectWCF" />
+      <xsd:import schemaLocation="http://localhost:58107/SocialConnectWCFService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://localhost:58107/SocialConnectWCFService.svc?xsd=xsd3" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="ISocialConnectWCF_GetData_InputMessage">
@@ -245,6 +284,12 @@
   <wsdl:message name="ISocialConnectWCF_GetList_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetListResponse" />
   </wsdl:message>
+  <wsdl:message name="ISocialConnectWCF_GetWallStoryByUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWallStoryByUserId" />
+  </wsdl:message>
+  <wsdl:message name="ISocialConnectWCF_GetWallStoryByUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWallStoryByUserIdResponse" />
+  </wsdl:message>
   <wsdl:portType name="ISocialConnectWCF">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/ISocialConnectWCF/GetData" message="tns:ISocialConnectWCF_GetData_InputMessage" />
@@ -257,6 +302,10 @@
     <wsdl:operation name="GetList">
       <wsdl:input wsaw:Action="http://tempuri.org/ISocialConnectWCF/GetList" message="tns:ISocialConnectWCF_GetList_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ISocialConnectWCF/GetListResponse" message="tns:ISocialConnectWCF_GetList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWallStoryByUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISocialConnectWCF/GetWallStoryByUserId" message="tns:ISocialConnectWCF_GetWallStoryByUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISocialConnectWCF/GetWallStoryByUserIdResponse" message="tns:ISocialConnectWCF_GetWallStoryByUserId_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="WSHttpBinding_ISocialConnectWCF" type="tns:ISocialConnectWCF">
@@ -292,6 +341,17 @@
       </wsdl:input>
       <wsdl:output>
         <wsp:PolicyReference URI="#WSHttpBinding_ISocialConnectWCF_GetList_output_policy" />
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWallStoryByUserId">
+      <soap12:operation soapAction="http://tempuri.org/ISocialConnectWCF/GetWallStoryByUserId" style="document" />
+      <wsdl:input>
+        <wsp:PolicyReference URI="#WSHttpBinding_ISocialConnectWCF_GetWallStoryByUserId_Input_policy" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsp:PolicyReference URI="#WSHttpBinding_ISocialConnectWCF_GetWallStoryByUserId_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>

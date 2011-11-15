@@ -71,7 +71,7 @@ namespace SocialConnectBE
         }
         #endregion
 
-        public static enum UserStatusList
+        public  enum UserStatusList
         {
             Pending,
             Approved,

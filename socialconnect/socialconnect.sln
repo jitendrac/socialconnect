@@ -10,6 +10,7 @@ EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "socialconnectwebsite", "socialconnectwebsite\", "{8372CABC-0E86-4208-8C26-F2DDC4F9A850}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFramework = "3.5"
+		ProjectReferences = "{3D44D85C-B833-4007-8602-F18E7A5496A3}|BusinessEntity.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/socialconnectwebsite"
 		Debug.AspNetCompiler.PhysicalPath = "socialconnectwebsite\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\socialconnectwebsite\"

@@ -65,6 +65,7 @@
     <Compile Include="PostDA.cs" />
     <Compile Include="PostTypeDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WallStoryDA.cs" />
     <Compile Include="RoleDA.cs" />
     <Compile Include="RoleXPermissionDA.cs" />
     <Compile Include="SubmissionStatusDA.cs" />

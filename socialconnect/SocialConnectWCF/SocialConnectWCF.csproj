@@ -56,6 +56,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SocialConnectWCF.csproj.user" />
     <Content Include="SocialConnectWCFService.svc" />
     <Content Include="App_Data\SocialConnectDB.mdf">
     </Content>

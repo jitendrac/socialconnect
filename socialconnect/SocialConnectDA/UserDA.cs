@@ -44,7 +44,7 @@ namespace SocialConnectDA
             ObjListUserParam.Add(new GenralizeParametre("Address", objUserBE.Address, DbType.String));
             ObjListUserParam.Add(new GenralizeParametre("ContactNo", objUserBE.ContactNo, DbType.String));
             ObjListUserParam.Add(new GenralizeParametre("EmailId", objUserBE.EmailId, DbType.String));
-            ObjListUserParam.Add(new GenralizeParametre("UserStatus", objUserBE.EmailId, DbType.String));
+            ObjListUserParam.Add(new GenralizeParametre("UserStatus", objUserBE.UserStatus, DbType.String));
             ObjListUserParam.Add(new GenralizeParametre("UserIdentityImageName", objUserBE.UserIdentityImageName, DbType.String));
             ObjListUserParam.Add(new GenralizeParametre("UserIdentityImagePath", objUserBE.UserIdentityImagePath, DbType.String));
             objUserBE.UserId = GenralizeStoredProcedure.GetInt(spUserSave, ObjListUserParam);

@@ -30,9 +30,15 @@ namespace SocialConnectWCF
 
         public int GetList()
         {
-            DataSet ds= UserBL.getAllElements();
+            DataSet ds = UserBL.getAllElements();
             return ds.Tables[0].Rows.Count;
         }
-        
+
+        public DataSet GetWallStoryByUserId(int intUserId)
+        {
+            return WallStoryBL.GetWallStoryByUserId(intUserId);
+        }
+
+       
     }
 }
